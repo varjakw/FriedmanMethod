@@ -37,12 +37,12 @@ def decrypt(cipher_text, key):
 
 
 # the input dialog
-message = input("What's your Message?").upper()
-keyword = input("What's your Keyword?").upper()
-print("The Key will now be generated from your keyword")
-key = generateKey(message, keyword).upper()
-print("The Key is: " + key)
-ciphertext = encrypt(message, key).upper()
-print("The ciphertext is: " + ciphertext)
-plaintext = decrypt(ciphertext, key).upper()
-print("The plaintext is: " + plaintext)
+#message = input("What's your Message?").upper()
+#keyword = input("What's your Keyword?").upper()
+#print("The Key will now be generated from your keyword")
+#key = generateKey(message, keyword).upper()
+#print("The Key is: " + key)
+#ciphertext = encrypt(message, key).upper()
+#print("The ciphertext is: " + ciphertext)
+#plaintext = decrypt(ciphertext, key).upper()
+#print("The plaintext is: " + plaintext)

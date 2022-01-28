@@ -45,14 +45,16 @@ class app:
         def_font = font.Font(family='MS Sans Serif')
         self.uppertext2 = tk.Label(self.frame3, text="Vigenére Cipher",font=def_font)
         self.uppertext2.pack()
-        self.menu_btn = tk.Button(self.frame3, text="Go to Main Menu", font=def_font, command=self.menu)
+        self.menu_btn = tk.Button(self.frame3, text="Main Menu", font=def_font, command=self.menu)
         self.menu_btn.pack()
         self.message_entry = tk.Entry(font=(def_font,25)) #width handled by place()
         self.keyword_entry = tk.Entry(font=(def_font,25))
-
-
         self.message_entry.place(x=30, y=100, width=250, height=40)
         self.keyword_entry.place(x=30, y=160, width=250, height=40)
+        #messagetext = self.message_entry.get()
+        #keywordtext = self.keyword_entry.get()
+        #self.encrypt_btn = tk.Button(self.frame3, text="Encrypt", font=def_font,command=print(messagetext + keywordtext))
+        #self.encrypt_btn.pack()
 
 
 root = tk.Tk()
