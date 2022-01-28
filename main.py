@@ -76,13 +76,54 @@ class app:
         keywordtext = self.keyword_entry.get()
         print("message: " + messagetext)
         print("keyword: " + keywordtext)
+        generatedkey = self.generatekey(messagetext, keywordtext)
+        encryptedtext = self.encrypt(messagetext, generatedkey)
+        self.key.insert(0, generatedkey)
+        self.ciphertext.insert(0, encryptedtext)
 
+    def generatekey(self, plaintext, key):
+        key = list(key)
+        if len(plaintext) == len(key):
+            return (key)
+        else:
+            for i in range(len(plaintext) -
+                           len(key)):
+                key.append(key[i % len(key)])
+        return ("".join(key))
 
+    def encrypt(self, plaintext, key):
+        cipher_text = []
+        for i in range(len(plaintext)):
+            x = (ord(plaintext[i]) + ord(key[i])) % 26  # Ei = (Pi + Ki) mod 26
+            x += ord('A')
+            cipher_text.append(chr(x))
+        return ("".join(cipher_text))
+
+    def decrypt(self, cipher_text, key):
+        orig_text = []
+        for i in range(len(cipher_text)):
+            x = (ord(cipher_text[i]) -
+                 ord(key[i]) + 26) % 26
+            x += ord('A')
+            orig_text.append(chr(x))
+        return "".join(orig_text)
 
 
 root = tk.Tk()
 app(root)
 root.mainloop()
+
+
+# Vigenere's Cipher - simple variant with repeating key.
+
+
+
+
+# key = generateKey(message, keyword).upper()
+
+# ciphertext = encrypt(message, key).upper()
+
+# plaintext = decrypt(ciphertext, key).upper()
 
 
 
