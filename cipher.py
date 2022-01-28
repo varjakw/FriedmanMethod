@@ -46,4 +46,3 @@ ciphertext = encrypt(message, key).upper()
 print("The ciphertext is: " + ciphertext)
 plaintext = decrypt(ciphertext, key).upper()
 print("The plaintext is: " + plaintext)
-
