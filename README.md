@@ -44,4 +44,7 @@ Ei = (Pi + Ki) mod 26
 Di = (Ei - Ki + 26) mod 26.
 
 
+## A Note About Tkinter's self.master
+
+
 
