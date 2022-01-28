@@ -1,4 +1,4 @@
-# FriedmanMethod
+# Friedman's Method
 Friedman's Method in Python, including graphical display of frequencies. In this case, I'll be using the simpler Vigenere variant, where reetition of the key is possible because the key is a smaller length than the plaintext message itself.
 
 
