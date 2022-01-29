@@ -64,4 +64,7 @@ Di = (Ei - Ki + 26) mod 26.
 ## A Note About Tkinter's self.master
 
 
+### Quick Note 
+Github with PyCharm is a little finnicky. Its best to make the repo first, and then clone it or "Get from VCS" as PyCharm calls it, and then to create your python files inside PyCharm before commit and push.
+
 
