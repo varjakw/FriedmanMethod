@@ -1,8 +1,25 @@
-# FriedmanMethod
+# Friedman's Method
 Friedman's Method in Python, including graphical display of frequencies. In this case, I'll be using the simpler Vigenere variant, where reetition of the key is possible because the key is a smaller length than the plaintext message itself.
 
 
-## Simple Vigenere Cipher
+The Vigenére Cipher method uses a series of Caeser ciphers based on the letters of a keyword.
+
+## Caeser Cipher
+
+Also known as the shift cipher, it is one of the simplest encryptions, based on subsitution enciphering. Each letter is replaced by a letter a fixed number of positions down the alphabet.
+
+| Input | Shift | Output
+| ------------- | ------------- | ------------- |
+| A  | Right by 3  | D |
+| B  | Right by 3  | E |
+| C  | Right by 3  | F |
+| A  | Left by 3  | X |
+| B  | Left by 3  | Y |
+| C  | Left by 3  | Z |
+
+This simple method can be incorporated into more complex encryption like Vigenere Ciphers and even has modern application in the ROT13 system.
+
+## Vigenére Cipher
 
 The method uses a Vigenere table which consists of a 26 by 26 square of alphabets, each alphabet shifted to the left and this corresponds to the 26 possible Ceaser chipers (we know that the Vigenre cipher is based on interwoven Caeser ciphers.
 
@@ -46,5 +63,8 @@ Di = (Ei - Ki + 26) mod 26.
 
 ## A Note About Tkinter's self.master
 
+
+### Quick Note 
+Github with PyCharm is a little finnicky. Its best to make the repo first, and then clone it or "Get from VCS" as PyCharm calls it, and then to create your python files inside PyCharm before commit and push.
 
 
