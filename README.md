@@ -1,5 +1,7 @@
 # Friedman's Method
-Friedman's Method in Java, including graphical display of frequencies. In this case, I'll be using the simpler Vigenere variant, where reetition of the key is possible because the key is a smaller length than the plaintext message itself.
+Friedman's Method in Java, including graphical display of frequencies. In this case, I'll be using the simpler Vigenere variant, where repetition of the key is possible because the key is a smaller length than the plaintext message itself.
+
+I originally made the Vigenére Cipher in Python so I'm including that as a bonus file, but I need the use of some Java libraries so the main program is in Java.
 
 
 The Vigenére Cipher method uses a series of Caeser ciphers based on the letters of a keyword.
