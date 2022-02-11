@@ -70,3 +70,6 @@ Di = (Ei - Ki + 26) mod 26.
 Github with PyCharm is a little finnicky. Its best to make the repo first, and then clone it or "Get from VCS" as PyCharm calls it, and then to create your python files inside PyCharm before commit and push.
 
 
+
+[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/made-with-Java.svg)](https://forthebadge.com)
